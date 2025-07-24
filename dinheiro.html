@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>conversor</title>
+    <link rel="stylesheet" href="dinheiro.css">
+</head>
+<body>
+    <div class="centro">
+    <form action="" method="get" id="formulario">
+        <input type="number" placeholder="coloque o valor" id="reais" required>
+       <select id="opçao" required>
+        <option value="Usa">Dolar</option>
+        <option value="Eur">Euro</option>
+        <option value="Lib">Libra</option>
+       </select>
+       <button onclick="caucular()" class="btn-azul">calcular</button>
+    </form>
+    </div>
+    <div class="baixo">
+        <h3>Resultado</h3>
+        <h4 id="resultado"></h4>
+    </div>
+
+    <script src="dinheiro.js"></script>
+</body>
+</html>

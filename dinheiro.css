@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+form {
+  display: flex;
+  flex-direction: column; 
+  gap: 20px; 
+  align-items: center; 
+  justify-items: center;
+  padding: 15vh;
+
+}
+.centro{
+    background-color: #E0F2FF;
+  height: 60vh;
+  width: 100vw;
+    justify-items: center;
+    align-items: center;
+
+}
+
+input{
+    background-color: #3399FF;
+    color: white;
+    margin: 0;
+    transition: all 0.3s;
+    height: 20vh;
+    width: 60vw;
+    font-size: xx-large;
+    text-align: center;
+    border-radius: 15vw;
+    border: 0;
+}
+input:hover{
+    background-color: #0077CC;
+}
+select{
+    background-color: #0077CC;
+    color: white;
+    font-size: larger;
+    border-radius: 5vw;
+    width: 30vw;
+    height: 10vh;
+       text-align: center;
+}
+option{
+    border-radius: 5vw;
+}
+.btn-azul {
+  background-color: #3399FF; /* Azul Principal */
+  color: #FFFFFF; /* Texto branco */
+  border: none;
+  border-radius: 8px; /* Bordas arredondadas */
+  padding: 12px 24px; /* Espaçamento interno */
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.btn-azul:hover {
+  background-color: #0077CC; /* Azul Médio - hover */
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.btn-azul:active {
+  background-color: #004C99; /* Azul Escuro - clique */
+  transform: translateY(0);
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+
+
+
+.baixo{
+  height: 40vh;
+  width: 100vw;
+    background-color:#002F66;
+    color: #FFFFFF;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+}

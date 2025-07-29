@@ -14,14 +14,25 @@
         <option value="Usa">Dolar</option>
         <option value="Eur">Euro</option>
         <option value="Lib">Libra</option>
+        <option value="todos">todos</option>
        </select>
        <button onclick="caucular()" class="btn-azul">calcular</button>
     </form>
     </div>
     <div class="baixo">
-        <h3>Resultado</h3>
+        <div class="dolar">
+        <h3 id="h3">Resultado em Dólar</h3>
         <spam id="conversao"></spam><br>
-        <h4 id="resultado"></h4>
+        <h4 id="resultado"></h4></div>
+            <div class="euro">
+        <h3 id="h3">Resultado em Euro</h3>
+        <spam id="conversaoe"></spam><br>
+        <h4 id="resultadoe"></h4></div>
+            <div class="libra">
+        <h3 id="h3">Resultado em Libra</h3>
+        <spam id="conversaol"></spam><br>
+        <h4 id="resultadol"></h4></div>
+
     </div>
 
     <script src="dinheiro.js"></script>

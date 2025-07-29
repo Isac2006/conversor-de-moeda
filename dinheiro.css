@@ -80,8 +80,15 @@ option{
   width: 100vw;
     background-color:#002F66;
     color: #FFFFFF;
-    display: flex;
-    justify-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     align-items: center;
-    text-align: center;
+    justify-items: center;
+}
+div.dolar, div.euro, div.libra {
+  width: 20rem;
+  height: 7rem;
+  border-radius: 15px;
+  border: 2px solid white;
+  padding: 1rem;
 }

@@ -71,17 +71,13 @@ option{
   transform: translateY(0);
   box-shadow: 0 3px 6px rgba(0,0,0,0.1);
 }
-
-
-
-
 .baixo{
   height: 40vh;
   width: 100vw;
     background-color:#002F66;
     color: #FFFFFF;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(30vw, 1fr));
     align-items: center;
     justify-items: center;
 }
@@ -91,4 +87,12 @@ div.dolar, div.euro, div.libra {
   border-radius: 15px;
   border: 2px solid white;
   padding: 1rem;
+  transition: all 0.2s;
+
+}
+div.dolar:hover, div.euro:hover, div.libra:hover {
+  background-color: white;
+  color: black;
+  margin: 2px solid black;
+    transform: scale(1.2);
 }

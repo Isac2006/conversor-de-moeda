@@ -9,11 +9,13 @@ let opcao = opçaoe.value
 let vUSA = 5.30
 let vEUR = 6.50
 let vLIB = 7.80
+let span = document.getElementById("conversao")
 
-let valorReais = parseFloat(document.getElementById("reais").value);
+let valorReais = parseFloat(document.getElementById("reais").value.replace("R$", "").replace(",", "."));
  switch (opcao) {
     case "Usa":
       convertervalor(valorReais,vUSA,"$")
+      
       break;
     case "Eur":
       convertervalor(valorReais,vEUR,"E")
@@ -27,9 +29,25 @@ let valorReais = parseFloat(document.getElementById("reais").value);
 let h4 = document.getElementById("resultado")
 let convertido = amont * moeda
 convertido = convertido.toFixed(2)
- let total = convertido.toString().replace(".",",")
-let mensagem = `${simbolo} ${total}`
+ let total = `R$ ${convertido.toString().replace(".",",")}`
+let mensagem = ` ${total}`
 h4.textContent = mensagem
+moeda = `  ${simbolo} ${moeda.toString().replace(".",",")}`
+span.textContent = `conversão reais para ${opcao} = ${moeda}`
+
 console.log("ola")
   }
 }
+const input = document.getElementById("reais");
+
+    input.addEventListener("input", function () {
+     let valorlimpo = input.value.replace(/\D/g, "");
+     let valor = (valorlimpo / 100)
+     valor = valor.toLocaleString('pt-BR', {
+        style: 'currency',
+        currency: 'BRL'
+      });
+      input.value = valor;
+
+
+    });

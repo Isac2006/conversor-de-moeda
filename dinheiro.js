@@ -83,6 +83,7 @@ console.log("ola")
   sp1.textContent = ""
   sp2.textContent = ""
 
+
   }
 }
 const input = document.getElementById("reais");
